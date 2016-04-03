@@ -302,13 +302,22 @@ header h4 {
 .bottom-nav {
   // position: relative;
   list-style: none;
-  margin: 0;
+  margin: 15px 0 0 0;
+  padding: 0
   // top: 18px;
   // right: 11px;
 }
 
+.bottom-nav li:hover > button {
+  background-color: rgba(15, 109, 179, 1);
+}
+
+.bottom-nav li:hover i {
+  background-color: rgba(9, 51, 81, 1);
+}
+
 .bottom-nav i {
-  position: relative;
+  float: left;
   background-color: rgba(93, 104, 111, 1);
   height: 30px;
   width: 33px;
@@ -318,6 +327,7 @@ header h4 {
 }
 
 .bottom-nav .button-caption {
+  line-height: 30px;
   font-size: 13px;
 
 }
@@ -327,11 +337,8 @@ header h4 {
 }
 
 
-.bottom-nav i {
-
-}
-
 .bottom-nav button {
+  margin-left: 10px;
   border: none;
   color: white;
   padding: 0;
@@ -536,6 +543,10 @@ header h4 {
   background: rgba(100, 118, 178, 0);
 }
 
+.footer-img-one:hover span {
+  color: white
+}
+
 
 
 .footer-img-two {
@@ -562,6 +573,10 @@ header h4 {
   background: rgba(100, 118, 178, 0);
 }
 
+.footer-img-two:hover span {
+  color: white
+}
+
 .footer-img-three {
   background: url('https://images.unsplash.com/reserve/eBJIgrh3TCeHf7unLQ5e_sailing-5.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=90cb51a1234b4073789332478298b9f2');
   background-size: cover;
@@ -585,6 +600,10 @@ header h4 {
   background: rgba(100, 118, 178, 0);
 }
 
+.footer-img-three:hover span {
+  color: white
+}
+
 .footer-img-four {
   background: url('https://images.unsplash.com/photo-1445140463371-d8036feedc2f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3f947bb953b891e1ed02ae740a24a1e0');
   background-size: cover;
@@ -606,10 +625,10 @@ header h4 {
 
 .footer-img-four:hover::before {
   background: rgba(100, 118, 178, 0);
+}
 
-  span {
-    color: white;
-  }
+.footer-img-four:hover span {
+  color: white;
 }
 
 .footer-nav {
